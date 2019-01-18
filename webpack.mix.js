@@ -24,7 +24,7 @@ mix.js('source/_assets/js/main.js', 'js')
     .sourceMaps()
     .options({
         processCssUrls: false,
-        postCss: [tailwindcss()],
+        postCss: [ tailwindcss('./tailwind.js') ],
     })
     .purgeCss({
         extensions: ['html', 'md', 'js', 'php', 'vue'],

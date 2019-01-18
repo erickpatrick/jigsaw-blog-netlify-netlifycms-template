@@ -5,26 +5,26 @@ body {
 a {
     @apply .font-semibold;
     @apply .no-underline;
-    @apply .text-blue-600;
+    @apply .text-blue-dark;
 
     &:hover {
-        @apply .text-blue-800;
+        @apply .text-blue-darker;
     }
 }
 
 blockquote {
-    @apply .border-blue-400;
+    @apply .border-blue-light;
     @apply .border-l-4;
     @apply .font-normal;
     @apply .italic;
     @apply .my-8;
     @apply .pl-6;
-    @apply .text-gray-800;
+    @apply .text-grey-darker;
     @apply .text-lg;
 }
 
 code {
-    @apply .bg-gray-300;
+    @apply .bg-grey-light;
     @apply .px-2;
     @apply .py-px;
     @apply .rounded;
@@ -39,7 +39,7 @@ code.hljs {
     .hljs-keyword,
     .hljs-meta {
         @apply .font-normal;
-        @apply .not-italic;
+        @apply .roman;
     }
 }
 
@@ -52,7 +52,7 @@ h6 {
     @apply .leading-tight;
     @apply .mb-4;
     @apply .mt-8;
-    @apply .text-gray-900;
+    @apply .text-black;
 
     &:first-child {
         @apply .mt-0;
@@ -91,7 +91,7 @@ h6 {
 
 hr {
     @apply .border-b;
-    @apply .border-blue-200;
+    @apply .border-blue-lighter;
     @apply .my-12;
     @apply .rounded-full;
 }
@@ -117,7 +117,7 @@ p {
 }
 
 pre {
-    @apply .bg-gray-200;
+    @apply .bg-grey-lighter;
     @apply .leading-loose;
     @apply .my-6;
     @apply .overflow-x-auto;
@@ -131,9 +131,4 @@ pre {
         @apply .block;
         @apply .p-0;
     }
-}
-
-::selection {
-    @apply .bg-blue-500;
-    @apply .text-white;
 }
