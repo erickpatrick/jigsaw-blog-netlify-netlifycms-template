@@ -1,0 +1,41 @@
+backend:
+  name: git-gateway
+display_url: https://<your-website-url>
+
+publish_mode: editorial_workflow
+media_folder: "source/assets/images/uploads"
+public_folder: "assets/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    description: >
+      All my blog posts
+    folder: "source/_posts"
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    create: true
+    identifier_field: "title"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true, default: "" }
+      - { label: "Author", name: "author", widget: "string", required: true, default: "" }
+      - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", required: true, default: "" }
+      - { label: "Description", name: "description", widget: "string", required: true, default: "" }
+      - { label: "Content", name: "body", widget: "markdown", hint: "Main content goes here." }
+      - label: "Cover image"
+        name: "cover_image"
+        widget: "image"
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - label: "Categories"
+        name: "categories"
+        widget: "select"
+        multiple: true
+        options: ["feature", "configuration"]
+      - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be featured on the home page?" }
+      - { name: "extends", widget: "hidden", required: true, default: "_layouts.post" }
+      - { name: "section", widget: "hidden", required: true, default: "content" }
