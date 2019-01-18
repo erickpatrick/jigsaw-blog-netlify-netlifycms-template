@@ -9,7 +9,7 @@
             @apply .float-left;
             @apply .font-semibold;
             @apply .p-0;
-            @apply .text-gray-800;
+            @apply .text-grey-darker;
 
             clear: both;
         }
@@ -30,7 +30,7 @@
         @apply .mb-6;
         @apply .text-2xl;
         @apply .text-center;
-        @apply .text-gray-900;
+        @apply .text-grey-darkest;
     }
 }
 
@@ -59,7 +59,7 @@
 }
 
 #mc-embedded-subscribe {
-    @apply .bg-blue-500;
+    @apply .bg-blue;
     @apply .cursor-pointer;
     @apply .leading-normal;
     @apply .px-6;
@@ -69,7 +69,7 @@
     @apply .w-1/3;
 
     &:hover {
-        @apply .bg-blue-600;
+        @apply .bg-blue-dark;
     }
 
     @screen md {
