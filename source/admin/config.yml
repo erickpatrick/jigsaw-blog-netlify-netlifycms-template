@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-display_url: https://<your-website-url>
+display_url: https://jigsaw-blog-netlify-netlifycms-template.netlify.com
 
 publish_mode: editorial_workflow
 media_folder: "source/assets/images/uploads"
