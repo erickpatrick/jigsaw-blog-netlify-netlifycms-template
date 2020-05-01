@@ -3,3 +3,7 @@
 command = "npm run production"
 publish = "build_production"
 environment = { PHP_VERSION = "7.2", NODE_VERSION = "11" }
+
+[template.environment]
+  BASE_URL_STAGING = "url to your PRODUCTION environment"
+  BASE_URL_PRODUCTION = "url to your PRODUCTION environment"
