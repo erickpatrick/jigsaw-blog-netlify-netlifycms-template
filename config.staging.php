@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'http://jigsaw-blog-staging.tighten.co',
+    'baseUrl' => 'https://jigsaw-blog-netlify-netlifycms-template.netlify.com',
     'production' => false,
 ];

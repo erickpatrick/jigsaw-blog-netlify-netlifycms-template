@@ -12,7 +12,9 @@ mix.js('source/_assets/js/main.js', 'js')
     })
     .options({
         processCssUrls: false,
-        postCss: [ tailwindcss('./tailwind.js') ],
+        postCss: [
+            require('tailwindcss'),
+        ],
     })
     .purgeCss({
         content: ['source/**/*.html', 'source/**/*.md', 'source/**/*.js', 'source/**/*.php', 'source/**/*.vue'],
