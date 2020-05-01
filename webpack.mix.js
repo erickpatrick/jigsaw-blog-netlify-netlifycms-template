@@ -17,7 +17,8 @@ mix.js('source/_assets/js/main.js', 'js')
         ],
     })
     .purgeCss({
-        content: ['source/**/*.html', 'source/**/*.md', 'source/**/*.js', 'source/**/*.php', 'source/**/*.vue'],
+        extensions: ['html', 'md', 'js', 'php', 'vue'],
+        folders: ['source'],
         whitelistPatterns: [/language/, /hljs/, /mce/],
     })
     .sourceMaps()
